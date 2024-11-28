@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_basic_test_infinite_loops",
+  "info": {
+    "displayName": "Test Infinite Loop",
+    "icon": "arrowUp"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

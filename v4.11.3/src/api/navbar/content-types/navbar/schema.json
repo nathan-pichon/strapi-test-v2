@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbars",
+  "info": {
+    "singularName": "navbar",
+    "pluralName": "navbars",
+    "displayName": "navbar",
+    "description": ""
+  },
+  "options": {
+    "reviewWorkflows": false,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "navbar": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::navbar.navbar",
+      "inversedBy": "navbars"
+    },
+    "navbars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar",
+      "mappedBy": "navbar"
+    },
+    "isParent": {
+      "type": "boolean"
+    }
+  }
+}
